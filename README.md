@@ -14,10 +14,6 @@ Clean and reusable implementation of the A* shortest path algorithm with:
 - unit tests
 - Jupyter notebook demo
 
-## Project Goals
-
-This repository demonstrates algorithmic problem-solving and clean Python project structure using the A* search algorithm.
-
 ## Features
 
 - Priority-queue based A* implementation (`astar/algorithm.py`)
@@ -26,6 +22,31 @@ This repository demonstrates algorithmic problem-solving and clean Python projec
 - Sample graph file for quick execution
 - Unit tests for core behavior and edge cases
 - Notebook for interactive explanation and execution
+
+## Quick Start
+
+```bash
+git clone https://github.com/sakib-maho/A-Star.git
+cd A-Star
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+No third-party dependencies are required.
+
+## Tests
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+## License
+
+MIT License - see [LICENSE](LICENSE).
+
+## Project Goals
+
+This repository demonstrates algorithmic problem-solving and clean Python project structure using the A* search algorithm.
 
 ## Project Structure
 
@@ -42,17 +63,6 @@ This repository demonstrates algorithmic problem-solving and clean Python projec
 ├── a_star.py
 └── cli.py
 ```
-
-## Quick Start
-
-```bash
-git clone https://github.com/sakib-maho/A-Star.git
-cd A-Star
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-No third-party dependencies are required.
 
 ## Run from CLI
 
@@ -72,12 +82,6 @@ Backward-compatible entrypoint:
 
 ```bash
 python a_star.py
-```
-
-## Run Tests
-
-```bash
-python -m unittest discover -s tests -v
 ```
 
 ## Input JSON Format
@@ -102,7 +106,3 @@ python -m unittest discover -s tests -v
   "goal": "D"
 }
 ```
-
-## License
-
-MIT License - see [LICENSE](LICENSE).

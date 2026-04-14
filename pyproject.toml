@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "astar-pathfinding-showcase"
+version = "0.1.0"
+description = "Reusable A* pathfinding module with CLI entrypoint."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Md Robiul Islam Sakib" }
+]
+keywords = ["astar", "pathfinding", "algorithm", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[project.scripts]
+astar-cli = "astar.cli:main"
+
+[tool.setuptools]
+packages = ["astar"]
